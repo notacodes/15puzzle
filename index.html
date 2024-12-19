@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/output.css" />
+    <link rel="stylesheet" href="src/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://unpkg.com/wired-elements/lib/wired-button.js?module"></script>
+    <script type="module" src="https://unpkg.com/wired-elements/lib/wired-card.js?module"></script>
+    <script type="module" src="https://unpkg.com/wired-elements/lib/wired-dialog.js?module"></script>
+    <title>Slide Puzzle</title>
+</head>
+<body>
+<wired-card>
+    <div id="puzzle-container"></div>
+</wired-card>
+<wired-button class="m-6 text-2xl" elevation="2" id="shuffle">Shuffle</wired-button>
+<wired-button class="m-6 text-2xl" elevation="2" id="goBigger">Go Bigger</wired-button>
+<br>
+<h3 id="counter">0</h3>
+<wired-dialog id="dialog" header="Congratulations!" message="You solved the puzzle!" closed></wired-dialog>
+<div id="results">
+</div>
+<script type="module" src="script.js"></script>
+</body>
+</html>
